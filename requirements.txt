@@ -1,0 +1,6 @@
+black
+matplotlib
+numpy
+pandas
+seaborn
+transformers
