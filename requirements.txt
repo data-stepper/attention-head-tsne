@@ -4,3 +4,8 @@ numpy
 pandas
 seaborn
 transformers
+scikit-learn
+torch
+tensorflow-cpu
+typer
+pytest
