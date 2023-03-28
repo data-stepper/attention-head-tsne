@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import warnings
 
 import typer
 from .util import (
@@ -35,7 +36,17 @@ def main(
     # TODO: Write a clipboard summarizer here, that's really useful and cool
 
     tokenizer, model = download_model_from_huggingface(model_name)
-    max_seq_len: int = model.config.seq_len
+
+    try:
+        max_seq_len: int = model.config.seq_len
+
+    except:
+        warnings.warn(
+            f"Failed to dynamically load the maximum sequence length of the "
+            f"model '{model_name}'. Using the default value of 512."
+        )
+
+        max_seq_len: int = 512
 
     print("Only using the first {} tokens of the text.".format(max_seq_len))
 

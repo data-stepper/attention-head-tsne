@@ -9,3 +9,4 @@ torch
 tensorflow-cpu
 typer
 pytest
+hypothesis
