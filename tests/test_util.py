@@ -1,12 +1,10 @@
-import unittest
 from unittest import TestCase
 from sklearn.manifold import TSNE
 
 import numpy as np
 
-from src.ah_tsne.util import (
+from ah_tsne.util import (
     _fit_classical_tsne,
-    _symmetrize_p_dist_matrix,
     get_custom_joint_probabilities,
     fit_attention_head_based_tsne,
     download_model_from_huggingface,

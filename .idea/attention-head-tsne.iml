@@ -12,7 +12,7 @@
   <component name="PyNamespacePackagesService">
     <option name="namespacePackageFolders">
       <list>
-        <option value="$MODULE_DIR$/src/ah_tsne" />
+        <option value="$MODULE_DIR$/ah_tsne" />
       </list>
     </option>
   </component>

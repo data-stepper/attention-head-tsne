@@ -2,7 +2,7 @@ import hypothesis
 from hypothesis import strategies
 import pytest
 
-from src.ah_tsne.__main__ import main
+from ah_tsne.__main__ import main
 
 sample_text: str = """
 Usually you want to be able to access these applications from anywhere on your system,

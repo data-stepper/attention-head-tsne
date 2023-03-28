@@ -1,6 +1,6 @@
 import pandas as pd
 import unittest
-from src.ah_tsne.plotting import better_scatter_plot
+from ah_tsne import better_scatter_plot
 
 
 class MyTestCase(unittest.TestCase):
