@@ -41,8 +41,5 @@ def test_main_hypothesis(input_text: str, head: int, layer: int) -> None:
     assert 0 <= layer <= 11
 
     main(
-        text=input_text,
-        model_name="bert-base-uncased",
-        layer=layer,
-        head=head
+        text=input_text, model_name="bert-base-uncased", layer=layer, head=head
     )
